@@ -9,23 +9,16 @@
 import React from 'react';
 import {
   SafeAreaView,
-  StyleSheet,
   ScrollView,
   View,
   Text,
   StatusBar,
   Image,
-  Dimensions,
-  ImageStore,
 } from 'react-native';
 
+import styles from './styles/sharedStyles.js';
 import 'react-native-gesture-handler';
 
-import {
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
 import {TouchableOpacity} from 'react-native-gesture-handler';
 
 function Home({navigation}) {
@@ -37,12 +30,7 @@ function Home({navigation}) {
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
           <Image
-            style={{
-              width: '100%',
-              height: '100%',
-              resizeMode: 'cover',
-              position: 'absolute',
-            }}
+            style={styles.image}
             source={require('../images/hero_image.png')}
           />
 
@@ -112,34 +100,6 @@ function Home({navigation}) {
   );
 }
 
-const styles = StyleSheet.create({
-  scrollView: {
-    width: '100%',
-    height: '100%',
-    backgroundColor: 'black',
-  },
-  engine: {
-    position: 'absolute',
-    right: 0,
-  },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
+
 
 export default Home;

@@ -62,15 +62,15 @@ function Home({navigation}) {
               <Text style={styles.sectionDescription}>Learn more about us</Text>
             </View>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
+              <Text style={styles.sectionTitle}>Submit Sessions</Text>
               <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
+                Are you interested in speaking? Submit a session!
               </Text>
             </View>
             <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
+              <Text style={styles.sectionTitle}>Feedback</Text>
               <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
+                We would love to hear from you.
               </Text>
             </View>
             <View style={styles.sectionContainer}>

@@ -25,7 +25,7 @@ function Home({navigation}) {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
+      <SafeAreaView style={styles.mainContainer}>
         <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>

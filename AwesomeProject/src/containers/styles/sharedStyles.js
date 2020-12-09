@@ -1,5 +1,8 @@
-import {StyleSheet, Pressable} from 'react-native';
+import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
+  mainContainer: {
+    flex: 1,
+  },
   scrollView: {
     width: '100%',
     height: '100%',
@@ -31,7 +34,7 @@ export default StyleSheet.create({
     textAlign: 'center',
   },
   sectionDescriptionStory: {
-    marginTop: 8,
+    marginTop: 15,
     fontSize: 20,
     fontWeight: '400',
     color: 'white',
@@ -52,6 +55,12 @@ export default StyleSheet.create({
     resizeMode: 'cover',
     position: 'absolute',
   },
+  storyImageSmall: {
+    width: 120,
+    height: 120,
+    resizeMode: 'cover',
+    position: 'absolute',
+  },
   buttonWrapper: {
     marginTop: 200,
   },
@@ -68,5 +77,17 @@ export default StyleSheet.create({
     fontWeight: '400',
     color: 'black',
     textAlign: 'center',
+  },
+  storyContainer: {
+    backgroundColor: 'black',
+    width: '100%',
+    height: '100%',
+  },
+  storyInnerContainer: {
+    alignContent: 'center',
+    paddingBottom: 10,
+    paddingTop: 10,
+    paddingLeft: 10,
+    paddingRight: 10,
   },
 });

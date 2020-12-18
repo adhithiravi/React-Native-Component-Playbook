@@ -1,4 +1,4 @@
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Pressable} from 'react-native';
 export default StyleSheet.create({
   mainContainer: {
     flex: 1,
@@ -15,6 +15,9 @@ export default StyleSheet.create({
   sectionContainer: {
     marginTop: 32,
     paddingHorizontal: 24,
+  },
+  footer: {
+    paddingBottom: 30,
   },
   sectionTitle: {
     fontSize: 24,
@@ -89,5 +92,26 @@ export default StyleSheet.create({
     paddingTop: 10,
     paddingLeft: 10,
     paddingRight: 10,
+  },
+  seperatorStyle: {
+    height: 1,
+    backgroundColor: 'lightsalmon',
+    paddingTop: 2,
+    marginTop: 25,
+  },
+  headerImage: {
+    width: '100%',
+    height: 250,
+    resizeMode: 'cover',
+  },
+  footerImage: {
+    width: 75,
+    height: 75,
+    resizeMode: 'cover',
+  },
+  footerContainer: {
+    marginTop: 32,
+    paddingHorizontal: 24,
+    marginBottom: 20,
   },
 });

@@ -1,6 +1,9 @@
 {
   "sessions": [
     {
+    "title": "Wednesday",
+    "data": [
+    {
       "id": 84473,
       "title": "Secure Programming for the Enterprise",
       "description": "Est sunt nostrud officia fugiat sunt reprehenderit cupidatat. Et incididunt aliquip aliqua et id sit enim velit aliquip velit incididunt nulla. Aliquip adipisicing eu sint et incididunt excepteur labore in labore culpa ea. Incididunt aute labore aute duis adipisicing officia consequat. Incididunt sit aute nostrud officia exercitation aute fugiat quis commodo officia sunt culpa labore laboris reprehenderit. Commodo eu non reprehenderit. Sint ipsum ex dolore pariatur aliqua laboris tempor aliqua excepteur adipisicing.\nExcepteur ex et veniam adipisicing eu et. Deserunt non laborum proident. Exercitation sint do irure ut eiusmod incididunt non. Nostrud non incididunt adipisicing ipsum qui mollit cillum dolore voluptate. Occaecat officia incididunt in duis.\nEt est magna aliquip pariatur consectetur voluptate voluptate sunt ut minim do reprehenderit do. Ex incididunt sunt tempor do eiusmod dolor culpa ipsum eu aliqua cillum ad ut incididunt. Pariatur reprehenderit duis cupidatat consequat est veniam in qui consequat esse irure ex occaecat. Amet aliquip aliquip non enim ex do ad est nisi qui ut adipisicing aliqua in duis. Adipisicing Lorem ut do deserunt ipsum nulla labore Lorem ullamco.",
@@ -383,7 +386,10 @@
       "format": "HalfDay Workshop",
       "track": "Cloud",
       "level": "Intermediate"
-    },
+    }]},
+    {
+      "title": "Thursday",
+      "data": [
     {
       "id": 82048,
       "title": "10 Things You'll Hate About React",
@@ -2007,7 +2013,10 @@
       "format": "Session",
       "track": "Mobile",
       "level": "Introductory and overview"
-    },
+    }]},
+    {
+      "title": "Friday",
+      "data": [
     {
       "id": 78170,
       "title": "A Modern Architectural Review of Adventure Games",
@@ -3609,27 +3618,6 @@
       "format": "Session",
       "track": "Human Skills",
       "level": "Introductory and overview"
-    },
-    {
-      "title": "TS for life",
-      "description": "really",
-      "format": "session",
-      "level": "beginner",
-      "id": "88c0a279-6b10-4d9f-b1e7-31e8c5376288"
-    },
-    {
-      "title": "GraphQL is great!",
-      "description": "It really is!",
-      "format": "Session",
-      "level": "Beginner",
-      "id": "c8b0084f-ca92-4d64-8946-9aa27f7be438"
-    },
-    {
-      "title": "did it work dude",
-      "description": "ajsahsh",
-      "level": "Intermediate",
-      "day": "Thursday",
-      "id": "814b1f5e-e6df-440b-a91c-df198b5bbed2"
-    }
+    }]} 
   ]
 }

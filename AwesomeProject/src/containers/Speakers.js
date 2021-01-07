@@ -2,6 +2,8 @@ import React from 'react';
 import {Text, FlatList, View, Image} from 'react-native';
 import {speakers} from '../data/speakers.json';
 import styles from '../containers/styles/sharedStyles.js';
+import {Footer} from '../components/Footer';
+import {Header} from '../components/Header';
 
 function Speakers() {
   return (
@@ -42,25 +44,15 @@ const SeparatorComponent = () => {
 
 const HeaderComponent = () => {
   return (
-    <View style={styles.sectionContainer}>
-      <Image
-        style={styles.headerImage}
-        source={require('../images/girl.png')}
-      />
-      <Text style={styles.sectionDescription}>Awesome Speakers Lineup!!</Text>
-    </View>
+    <Header
+      image={require('../images/girl.png')}
+      heading={'Awesome Speakers Lineup!!'}
+      style={styles.sectionTitleGreen}
+    />
   );
 };
 
 const FooterComponent = () => {
-  return (
-    <View style={styles.footerContainer}>
-      <Image style={styles.footerImage} source={require('../images/G.png')} />
-      <Text style={styles.sectionDescription}>
-        {' '}
-        All rights reserved by Globomantics Tech Conference 2020.
-      </Text>
-    </View>
-  );
+  return <Footer />;
 };
 export default Speakers;

@@ -1,7 +1,10 @@
-import React from 'react';
-import {Text, SectionList, View, Image} from 'react-native';
+import React, {useState} from 'react';
+import {Text, SectionList, View} from 'react-native';
 import {sessions} from '../data/sessions.json';
 import styles from './styles/sharedStyles.js';
+import {Footer} from '../components/Footer';
+import {Header} from '../components/Header';
+import {TouchableOpacity} from 'react-native-gesture-handler';
 
 function Sessions() {
   return (
@@ -36,17 +39,39 @@ const renderItem = ({item, index}) => {
         name={item.title}
         desc={item.description}
         speaker={item.speakers[0].name}
+        level={item.level}
+        room={item.room}
       />
     </View>
   );
 };
 
-const SessionsList = ({id, name, speaker, desc}) => {
+const SessionsList = (props) => {
+  const [moreInfo, setMoreInfo] = useState(false);
   return (
-    <View key={id} style={styles.sectionContainer}>
-      <Text style={styles.sectionTitle}>{'Session :' + name}</Text>
-      <Text style={styles.sectionDescription}>{'Details :' + desc}</Text>
-      <Text style={styles.sectionDescription}>{'Speaker :' + speaker}</Text>
+    <View key={props.id} style={styles.sectionContainer}>
+      <Text style={styles.sectionTitle}>{'Session : ' + props.name}</Text>
+      <Text style={styles.sectionDescription}>
+        {'Speaker : ' + props.speaker}
+      </Text>
+      <TouchableOpacity onPress={() => setMoreInfo(!moreInfo)}>
+        <Text style={styles.clickableText}>
+          {moreInfo ? 'Hide Details' : 'Show More Details'}
+        </Text>
+      </TouchableOpacity>
+      {moreInfo && (
+        <>
+          <Text style={styles.sectionDescription}>
+            {'Details : ' + props.desc}
+          </Text>
+          <Text style={styles.sectionDescription}>
+            {'Room : ' + props.room}
+          </Text>
+          <Text style={styles.sectionDescription}>
+            {'Level : ' + props.level}
+          </Text>
+        </>
+      )}
     </View>
   );
 };
@@ -57,26 +82,16 @@ const SeparatorComponent = () => {
 
 const HeaderComponent = () => {
   return (
-    <View style={styles.sectionContainer}>
-      <Image
-        style={styles.headerImage}
-        source={require('../images/sec2.jpg')}
-      />
-      <Text style={styles.sectionDescription}>Awesome Sessions Lineup!!</Text>
-    </View>
+    <Header
+      image={require('../images/sec2.jpg')}
+      heading={'Awesome Sessions!!'}
+      style={styles.sectionTitle}
+    />
   );
 };
 
 const FooterComponent = () => {
-  return (
-    <View style={styles.footerContainer}>
-      <Image style={styles.footerImage} source={require('../images/G.png')} />
-      <Text style={styles.sectionDescription}>
-        {' '}
-        All rights reserved by Globomantics Tech Conference 2020.
-      </Text>
-    </View>
-  );
+  return <Footer />;
 };
 
 export default Sessions;

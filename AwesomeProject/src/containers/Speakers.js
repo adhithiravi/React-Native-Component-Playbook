@@ -19,8 +19,8 @@ function Speakers() {
     <View>
       <SearchSessions getSearchText={getSearchText} />
       <FlatList
-        keyboardDismissMode="on-drag"
-        keyboardShouldPersistTaps="always"
+        keyboardDismissMode={'on-drag'}
+        keyboardShouldPersistTaps={'always'}
         data={filteredSpeakers}
         keyExtractor={(item) => item.id}
         renderItem={renderItem}
